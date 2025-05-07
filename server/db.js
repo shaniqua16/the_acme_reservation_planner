@@ -98,7 +98,7 @@ const destroyReservation = async (id) => {
         DELETE FROM reservations WHERE id = $1;
     `;
   await client.query(SQL, [id]);
- 
+}
   
 module.exports = {
   client,
